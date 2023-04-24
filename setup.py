@@ -20,9 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'tf_merger = tf_merger.tf_merger:main',
-            'tf_repub = tf_merger.tf_repub:main',
-            'test_tf_merger = tf_merger.test_tf_merger:main'
+            'relay = tf_merger.main:main'
         ],
     },
 )
