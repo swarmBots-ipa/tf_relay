@@ -7,7 +7,7 @@ This node is necessary to run multiple turtlebot4's in a global frame, this node
 ## Usage
 ###### By default the number of robots `agents=4` and `namespace=agent`
 ````
-ros2 run tf_merger relay
+ros2 run tf_relay relay
 ````
 ###### Change number of robots and namespace
 For example: 
@@ -15,7 +15,7 @@ For example:
 ``number of robots = 10``
 
 ````
-ros2 run tf_merger relay 'turtlebot4' 10
+ros2 run tf_relay relay 'turtlebot4' 10
 ````
 
 ![](./images/rosgraph.png)

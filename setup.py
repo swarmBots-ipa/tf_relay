@@ -1,6 +1,6 @@
 from setuptools import setup
 
-package_name = 'tf_merger'
+package_name = 'tf_relay'
 
 setup(
     name=package_name,
@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'relay = tf_merger.main:main'
+            'relay = tf_relay.main:main'
         ],
     },
 )
