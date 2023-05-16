@@ -1,6 +1,6 @@
 import rclpy
-from tf_merger.tf_relay import TFRelay
-from tf_merger.tf_static_relay import TFStaticRelay
+from tf_relay.tf_relay import TFRelay
+from tf_relay.tf_static_relay import TFStaticRelay
 from rclpy.executors import SingleThreadedExecutor
 import sys
 
