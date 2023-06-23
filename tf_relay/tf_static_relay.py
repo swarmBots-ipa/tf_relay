@@ -22,7 +22,7 @@ class TFStaticRelay(Node):
             msg_type=TFMessage,
             topic='/tf_static',
             qos_profile=QoSProfile(reliability=QoSReliabilityPolicy.RELIABLE, durability=QoSDurabilityPolicy.TRANSIENT_LOCAL , depth=10))
-        self.frame_prefix = 'agent_1/'
+        self.frame_prefix = str(namespace)  + '_' + str(agent) + '/'
 
     def static_tf_callback(self, msg):
         for transform in msg.transforms:
